@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "LIFE",
+    "slug": "LIFE",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "LIFE",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#DC143C",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow LIFE to use your location to send accurate emergency alerts and find nearby shelters."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow LIFE to access photos for emergency reporting verification.",
+          "cameraPermission": "Allow LIFE to capture photos for emergency reporting verification."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#DC143C",
+          "dark": {
+            "backgroundColor": "#1a0000"
+          }
+        }
+      ],
+      "expo-web-browser",
+      "expo-font",
+      "expo-image",
+      "expo-status-bar"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
